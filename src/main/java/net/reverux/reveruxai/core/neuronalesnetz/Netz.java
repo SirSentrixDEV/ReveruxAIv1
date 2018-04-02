@@ -13,6 +13,12 @@ public class Netz {
         for(int i = 0; i < input; i++) {
             this.input.add(new Neuron(this.hidden));
         }
+        for(int i = 0; i < hidden; i++) {
+            this.hidden.add(new Neuron(this.output));
+        }
+        for(int i = 0; i < output; i++) {
+            this.output.add(new Neuron(null));
+        }
     }
 
 }
